@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product Landing Page (Freecodecamp project)</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
 </head>
 
 <body>
@@ -15,36 +16,55 @@
     <div class="wrapper">
         <header id='header'>
             <div class="container">
-
-                <div class="header__logo">
-                    <div class="logo__left">
-                        <img src="#" alt="" class="logo__img" id="header-img">
-                    </div>
-                    <div class="logo__right">
-                        <a href="#" class="header__logo--text1">Atlantis Space</a>
-                        <a href="#" class="header__logo--text2">Manufactury</a>
+                <div class="header__wrap">
+                    <div class="header__logo">
+                        <div class="logo__left">
+                            <a href="#"><img src="https://image.flaticon.com/icons/svg/207/207665.svg" alt="" class="logo__img"
+                                    id="header-img"> </a>
+                        </div>
+                        <div class="logo__right">
+                            <a href="#" class="header__logo--text">Atlantis Space Manufactury</a>
+                        </div>
+                        <nav id="nav-bar" class="header__nav">
+                            <ul class="nav__menu">
+                                <li class="nav__li"> <a href="#" class="nav__link"> Main </a></li>
+                                <li class="nav__li"><a href="#" class="nav__link"> Features </a></li>
+                                <li class="nav__li"> <a href="#" class="nav__link"> Watch how it work </a></li>
+                                <li class="nav__li"> <a href="#" class="nav__link"> Make an order </a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-                <nav id="nav-bar" class="nav">
-                    <ul>
-                        <li class="nav__li"> <a href="#" class="nav__link">Main</a></li>
-                        <li class="nav__li"><a href="#" class="nav__link">Features</a></li>
-                        <li class="nav__li"> <a href="#" class="nav__link">Watch how its work</a></li>
-                        <li class="nav__li"> <a href="#" class="nav__link">Make an order</a></li>
-                    </ul>
-                </nav>
-            </div>
         </header>
         <main>
             <div class="container">
+
                 <section class="section section-1">
-                    <h1>For you and for your journeys. We present you the most comfortable spaceship in galaxy! </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, voluptatibus excepturi minima
-                        voluptas aut cumque. Nam repudiandae dolore vel aliquam qui officia, vitae reprehenderit iste
-                        inventore rerum corporis accusantium itaque?</p>
+                    <div class="section-1__title">
+                        <h1>For you and for your journeys.</h1>
+                        <h1>We proud to present the most comfortable spaceship in galaxy.</h1>
+                    </div>
+                    <div class="section-1__img">
+                        <img src="img/nasa-ship-1.jpg" alt="spaceship">
+                    </div>
+                    <div class="section-1__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, voluptatibus excepturi
+                            minima
+                            voluptas aut cumque. Nam repudiandae dolore vel aliquam qui officia, vitae reprehenderit
+                            iste
+                            inventore rerum corporis accusantium itaque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, voluptatibus excepturi
+                            minima
+                            voluptas aut cumque. Nam repudiandae dolore vel aliquam qui officia, vitae reprehenderit
+                            iste
+                            inventore rerum corporis accusantium itaque?</p>
+                    </div>
                 </section>
+
                 <section class="section section-2">
-                    <h3>Why is this ship number one in sales?</h3>
+                    <div class="section-2__title">
+                            <h2>Why is this ship number one in sales?</h2>
+                    </div>
                     <div class="section-2__item">
                         <div class="section-2__icon"></div>
                         <div class="section-2__text">New technology of space travels</div>
@@ -125,27 +145,28 @@
                         </div>
                     </div>
                     <div class="form__row">
-                            <div class="left__side">
-                              <label for="comments" class="form__label">Write your comments and aditional wishes: </label>
-                            </div>
-                            <div class="right__side">
-                              <textarea id='comments' type="textarea" class='form__textarea' placeholder=''> </textarea>
-                            </div>
-                          </div>
-                             
-                              <div class="form__submit">
-                                <button id='submit' class='form__btn' value='submit'> Submit </button>
-                              </div>
+                        <div class="left__side">
+                            <label for="comments" class="form__label">Write your comments and aditional wishes: </label>
+                        </div>
+                        <div class="right__side">
+                            <textarea id='comments' type="textarea" class='form__textarea' placeholder=''> </textarea>
+                        </div>
+                    </div>
+
+                    <div class="form__submit">
+                        <button id='submit' class='form__btn' value='submit'> Submit </button>
+                    </div>
                 </section>
 
             </div>
         </main>
-        <footer>
-            <div class="footer__text">
-                Maxim Mirolyubov for Freecodecamp
-            </div>
-        </footer>
+
     </div>
+    <footer>
+        <div class="footer__text">
+            Maxim Mirolyubov for Freecodecamp
+        </div>
+    </footer>
 </body>
 
 </html>
