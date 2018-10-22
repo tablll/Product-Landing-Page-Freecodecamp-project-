@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product Landing Page (Freecodecamp project)</title>
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
 </head>
 
 <body>
@@ -29,10 +29,11 @@
                     </div>
                     <nav id="nav-bar" class="header__nav">
                         <ul class="nav__menu">
-                            <li class="nav__li"> <a href="#" class="nav__link"> Main </a></li>
-                            <li class="nav__li"><a href="#" class="nav__link"> Features </a></li>
-                            <li class="nav__li"> <a href="#" class="nav__link"> Watch how it work </a></li>
-                            <li class="nav__li"> <a href="#" class="nav__link"> Make an order </a></li>
+                            <li class="nav__li"> <a href="#main" class="nav-link"> Main </a></li>
+                            <li class="nav__li"><a href="#features" class="nav-link"> Features </a></li>
+                            <li class="nav__li"> <a href="#video-section" class="nav-link"> Watch video </a></li>
+                            <li class="nav__li"> <a href="#modifications" class="nav-link"> Modifications </a></li>
+                            <li class="nav__li"> <a href="#form" class="nav-link"> Contacts </a></li>
                         </ul>
                     </nav>
                 </div>
@@ -41,7 +42,7 @@
         <main>
             <div class="container">
 
-                <section class="section section-1">
+                <section class="section section-1" id='main'>
                     <div class="section-1__title">
                         <h1>For you and for your journeys.</h1>
                         <h1>We proud to present the most comfortable spaceship in galaxy.</h1>
@@ -62,7 +63,7 @@
 
                 </section>
 
-                <section class="section section-2">
+                <section class="section section-2" id='features'>
                     <div class="section-2__title">
                         <h2>Why this ship number one in sales?</h2>
                     </div>
@@ -120,7 +121,7 @@
 
                 <!-- Section-3 Video -->
 
-                <section class="section section-3">
+                <section class="section section-3" id='video-section'>
                     <div class="section-3__title">
                         <h1>You want to travel safe. </h1>
                         <h1>You want to travel fast.</h1>
@@ -135,7 +136,7 @@
 
                 <!-- Section-4 Ship Modifications -->
 
-                <section class="section section-4">
+                <section class="section section-4" id='modifications'>
                     <div class="section-4__title">
                         <h1> Voyager have 3 modifications. Choose yours.</h1>
                     </div>
@@ -183,7 +184,7 @@
 
                 <!-- Section-5 contact form -->
 
-                <section class="section-5">
+                <form class="section-5" id='form' method="post" action="https://www.freecodecamp.com/email-submit">
                     <div class="secttion-5__title">
                         <h3>You have any questions?</h3>
                     </div>
@@ -201,7 +202,7 @@
                                 <label for="email" id="email-label" class="form__label">E-mail:</label>
                             </div>
                             <div class="right__side">
-                                <input id='email' class='form__text' type="email" placeholder='Enter your e-mail'
+                                <input id='email' class='form__text' type="email" placeholder='Enter your e-mail' name="email"
                                     required>
                             </div>
                         </div>
@@ -216,10 +217,10 @@
                         </div>
 
                         <div class="form__submit">
-                            <button id='submit' class='form__btn' value='submit'> Submit </button>
+                            <input id='submit' type="submit" class='form__btn' value='SUBMIT'>
                         </div>
                     </div>
-                </section>
+                </form>
 
             </div>
         </main>

@@ -45,6 +45,12 @@ h1, h2, h4 {
 
 header {
     background-color: rgba(131, 142, 181);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 100;
 }
 
 .header__wrap {
@@ -88,6 +94,7 @@ header {
     /* width: 70%;
     min-width: 500px; */
     flex: 3;
+    margin: 10px 5px 10px 0;
 }
 
 .nav__menu {
@@ -96,22 +103,23 @@ header {
     align-items: center;
     flex-wrap: wrap;
     height: 100%;
+    
 }
 
 @media all and (max-width: 1040px) {
     .nav__menu {flex-direction: column;}
 }
 
-.nav__link {
+.nav-link {
     text-decoration: none;
-    font-size: 17px;
-    font-weight: lighter;
+    font-size: 16px;
+    /* font-weight: lighter; */
     color: black;
     text-transform: uppercase;
     padding: 7px;
 }
 
-.nav__link:hover {
+.nav-link:hover {
     font-weight: bold;
 }
 
@@ -131,7 +139,7 @@ header {
     justify-content: flex-end;
     align-items: flex-start;
     padding: 7px;
-    margin: 5% 10% 5% 10%;
+    margin: 200px 10% 5% 10%;
 }
 
 .section-1__title h1 {
@@ -404,6 +412,11 @@ header {
     font-size: 17px;
     font-weight: bold;
     background-color: rgba(226, 216, 225);
+    transition: 0.3s;
+}
+
+.section-4__btn:hover, .form__btn:hover {
+    background-color: rgba(196, 216, 225);
 }
 
 .section-5 {
@@ -458,7 +471,7 @@ header {
 
 .form__submit {
     text-align: center;
-
+    padding-top: 20px;
 }
 
 footer {
@@ -494,3 +507,14 @@ footer {
     padding-left: 30px;
     
 }
+
+.fab {
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.fab:hover {
+    color: aliceblue;
+}
+
+
